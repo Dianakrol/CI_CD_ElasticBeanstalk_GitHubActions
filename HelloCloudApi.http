@@ -1,0 +1,6 @@
+@HelloCloudApi_HostAddress = http://localhost:5170
+
+GET {{HelloCloudApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

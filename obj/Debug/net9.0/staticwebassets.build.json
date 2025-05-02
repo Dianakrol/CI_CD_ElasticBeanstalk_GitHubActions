@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "qJo+ZARjTZbCcqy3DgPrn8unOj1lwZAFREyF1FiuL90=",
+  "Source": "HelloCloudApi",
+  "BasePath": "_content/HelloCloudApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
