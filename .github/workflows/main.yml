@@ -23,13 +23,12 @@ jobs:
   - name: Publish
     run: dotnet publish -c Release -o publish
   
+  - name: Zip
+    run: zip -r deploy.zip ./publish/*
+
   - name: list Directory
     run: |
       ls -la .
-      tree publish
-
-  # - name: Zip
-  #   run: zip -r deploy.zip ./publish/*
 
   # - name: Deploy to Elastic Beanstalk
   #   uses: einaregilsson/beanstalk-deploy@v20
