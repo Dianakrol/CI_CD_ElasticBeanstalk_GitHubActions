@@ -39,5 +39,5 @@ jobs:
       environment_name: dotnetapp-env
       version_label: ${{ github.run_number  }}
       region: us-east-1
-      deployment_package: 9.zip
+      deployment_package: deploy.zip
   
