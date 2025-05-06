@@ -35,9 +35,9 @@ jobs:
     with:
       aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
       aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      application_name: HelloCloudApp
-      environment_name: HelloCloudApp-env
-      version_label: ${{ github.sha }}
+      application_name: dotnetapp
+      environment_name: dotnetapp-env
+      version_label: ${{ github.run_number  }}
       region: us-east-1
       deployment_package: deploy.zip
   
