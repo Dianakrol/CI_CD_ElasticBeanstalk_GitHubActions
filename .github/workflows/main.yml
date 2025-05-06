@@ -26,7 +26,7 @@ jobs:
   - name: list Directory
     run: |
       ls -la .
-      tree
+      tree publish
 
   # - name: Zip
   #   run: zip -r deploy.zip ./publish/*
