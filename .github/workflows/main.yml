@@ -37,7 +37,6 @@ jobs:
       aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       application_name: dotnetapp
       environment_name: dotnetapp-env
-      version_label: ${{ github.run_number  }}
+      version_label: app-${{ github.run_number  }}
       region: us-east-1
-      deployment_package: deploy.zip
-  
+      deployment_package: app-${{ github.run_number  }}.zip
