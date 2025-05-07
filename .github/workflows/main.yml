@@ -41,4 +41,4 @@ jobs:
         environment_name: HelloCloudApi-env
         version_label: v1
         region: us-east-1
-        deployment_package: app.zip
+        deployment_package: v1.zip
