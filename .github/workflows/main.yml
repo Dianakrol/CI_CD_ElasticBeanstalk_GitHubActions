@@ -26,11 +26,10 @@ jobs:
 
     - name: Zip published output
       run: |
-        cd publish
-        zip -r ../app-${{ github.sha }}.zip .
+        zip -r deploy.zip ./publish/*
 
     - name: List root directory (debug)
-      run: cd .. && ls -la
+      run: ls -la
 
     - name: Deploy to Elastic Beanstalk
       uses: einaregilsson/beanstalk-deploy@v20
@@ -42,4 +41,4 @@ jobs:
         version_label: app-${{ github.sha }}
         region: us-east-1
         existing_bucket_name: elasticbeanstalk-us-east-1-119002862575
-        deployment_package: HelloCloudApi/app-${{ github.sha }}.zip
+        deployment_package: HelloCloudApi/deploy.zip
