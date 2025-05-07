@@ -26,8 +26,8 @@ jobs:
 
     - name: Zip published output
       run: |
-        zip -r deploy.zip ./publish/*
-
+        cd publish
+        zip -r ../app.zip .
     - name: List root directory (debug)
       run: ls -la
 
@@ -40,5 +40,4 @@ jobs:
         environment_name: HelloCloudApi-env
         version_label: app-${{ github.sha }}
         region: us-east-1
-        existing_bucket_name: elasticbeanstalk-us-east-1-119002862575
-        deployment_package: HelloCloudApi/deploy.zip
+        deployment_package: app.zip
