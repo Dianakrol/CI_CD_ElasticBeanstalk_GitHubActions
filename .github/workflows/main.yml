@@ -24,7 +24,9 @@ jobs:
     run: dotnet publish -c Release -o publish
   
   - name: Zip
-    run: zip -r deploy.zip ./publish/*
+    run: |
+      cd publish
+      zip -r app.zip .
 
   - name: list Directory
     run: |
@@ -39,4 +41,4 @@ jobs:
       environment_name: HelloCloudApi-env
       version_label: app-${{ github.sha  }}
       region: us-east-1
-      deployment_package: app.zip
+      deployment_package: deploy.zip
