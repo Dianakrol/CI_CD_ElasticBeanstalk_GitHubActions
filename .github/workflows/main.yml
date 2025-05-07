@@ -30,7 +30,7 @@ jobs:
         zip -r ../app.zip .
 
     - name: List root directory (debug)
-      run: ls -la
+      run: cd .. ls -la
 
     - name: Deploy to Elastic Beanstalk
       uses: einaregilsson/beanstalk-deploy@v20
