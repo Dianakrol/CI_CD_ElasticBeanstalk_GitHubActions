@@ -28,7 +28,7 @@ jobs:
       run: |
         cd publish
         zip -r deploy.zip . -x '*.git*'
-        cd ..
+        
     - name: List root directory (debug)
       run: ls -la
 
