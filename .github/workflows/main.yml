@@ -28,6 +28,7 @@ jobs:
       run: |
         cd publish
         zip -r ../app.zip .
+        cd ..
     - name: List root directory (debug)
       run: ls -la
 
@@ -40,4 +41,4 @@ jobs:
         environment_name: HelloCloudApi-env
         version_label: app-${{ github.sha }}
         region: us-east-1
-        deployment_package: HelloCloudApi/app-${{ github.sha }}.zip
+        deployment_package: HelloCloudApi/app-5fc3fc8de105eb61538be5e4334ecf33adf55106.zip
