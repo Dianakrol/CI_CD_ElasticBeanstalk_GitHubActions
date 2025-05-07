@@ -38,7 +38,7 @@ jobs:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: HelloCloudApi
-        environment_name: HelloCloudApi-env
+        environment_name: HelloCloudApp-env
         version_label: v1.0.0
         region: us-east-1
         deployment_package: deploy.zip
