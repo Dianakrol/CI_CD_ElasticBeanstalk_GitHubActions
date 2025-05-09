@@ -37,8 +37,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: 'eb create HelloCloudApp-env'
-        environment_name: HelloCloudApiv2
+        application_name: 'eb create HelloCloudApp-env3'
+        environment_name: HelloCloudApiv3
         version_label: v${{ github.run_number }}
         region: us-east-1
         deployment_package: deploy.zip
